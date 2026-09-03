@@ -40,19 +40,20 @@ const OnlineConsultation = () => {
               </div>
             </motion.div>
 
-            {/* Image Placeholder */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative aspect-video rounded-2xl overflow-hidden bg-brand-soft-gray border border-gray-200"
-            >
-              <div className="absolute inset-0 flex items-center justify-center text-brand-teal font-medium">
-                Online Consultation Image Placeholder
+            {/* Image */}
+            <div className="relative aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 md:order-2">
+              <img 
+                src="/src/assets/ddrr_consult.jpg" 
+                alt="Online Consultation" 
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay UI elements to simulate video call */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-md rounded-full px-6 py-3 flex gap-4 border border-white/10">
+                <div className="w-10 h-10 rounded-full bg-red-500/80 flex items-center justify-center text-white cursor-pointer hover:bg-red-500 transition-colors">
+                  <PhoneOff size={18} />
+                </div>
               </div>
-              {/* <img src="/src/assets/online-consultation-placeholder.jpg" alt="Online Consultation" className="w-full h-full object-cover" /> */}
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

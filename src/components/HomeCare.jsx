@@ -46,9 +46,19 @@ const HomeCare = () => {
           transition={{ duration: 0.8 }}
           className="relative lg:h-[500px] hidden md:block"
         >
-          <div className="absolute inset-0 bg-white/5 border border-white/10 rounded-3xl flex items-center justify-center backdrop-blur-sm shadow-2xl overflow-hidden">
-             <div className="text-brand-teal font-medium">Home Care Image Placeholder</div>
-             {/* <img src="/src/assets/home-care-placeholder.jpg" alt="Home Care" className="w-full h-full object-cover opacity-80" /> */}
+          {/* Image */}
+          <div className="relative aspect-square md:aspect-[4/3] overflow-hidden">
+            <img 
+              src="/src/assets/ddrr_homecare.jpg" 
+              alt="Home Care Physiotherapy" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-brand-deep-navy/80 to-transparent flex items-end p-8">
+              <div className="text-white">
+                <p className="font-bold text-xl">Professional Care,</p>
+                <p className="text-brand-bright-teal">Right at your doorstep.</p>
+              </div>
+            </div>
           </div>
           
           {/* Decorative floating elements */}

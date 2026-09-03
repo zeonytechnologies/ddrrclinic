@@ -21,13 +21,13 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="relative aspect-square md:aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden bg-brand-soft-gray border border-gray-200 shadow-xl"
         >
-          <div className="absolute inset-0 flex items-center justify-center text-brand-teal font-medium">
-            About Clinic Image Placeholder
-          </div>
-          {/* <img src="/src/assets/about-image.jpg" alt="Clinic Facility" className="w-full h-full object-cover" /> */}
-          
-          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/50 to-transparent"></div>
-          <div className="absolute bottom-8 left-8 text-white">
+          <img 
+            src="/src/assets/ddrr_about.jpg" 
+            alt="DDRR Clinic facility" 
+            className="rounded-3xl shadow-xl w-full h-full object-cover relative z-10"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/50 to-transparent z-20"></div>
+          <div className="absolute bottom-8 left-8 text-white z-30">
             <p className="text-2xl font-bold">DDRR Clinic</p>
             <p className="text-sm opacity-90">KVPR Pet Ekambarakuppam</p>
           </div>

@@ -90,9 +90,12 @@ const Hero = ({ onBookAppointment }) => {
             {/* Image Placeholder */}
             <div className="absolute inset-0 bg-brand-soft-gray flex items-center justify-center">
               <span className="text-brand-teal font-medium">Hero Image Placeholder</span>
+              <img 
+                src="/src/assets/ddrr_hero.jpg" 
+                alt="Physiotherapy session at DDRR Clinic" 
+                className="rounded-3xl shadow-[0_20px_50px_rgba(8,39,68,0.15)] relative z-10 w-full object-cover aspect-[4/5] md:aspect-auto"
+              />
             </div>
-            {/* When real image is provided: */}
-            {/* <img src="/src/assets/hero-image.jpg" alt="Physiotherapy session" className="w-full h-full object-cover" /> */}
           </div>
           
           {/* Decorative arcs and glow behind image */}
