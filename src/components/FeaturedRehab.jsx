@@ -48,7 +48,7 @@ const FeaturedRehab = () => {
           <div className="absolute inset-0 bg-brand-dark-navy rounded-[3rem] border border-brand-teal/20 overflow-hidden flex items-center justify-center">
              <div className="relative aspect-[3/4] md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-white/10">
               <img 
-                src="/src/assets/ddrr_rehab.jpg" 
+                src="/assets/ddrr_rehab.jpg" 
                 alt="Human body biomechanics" 
                 className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
               />

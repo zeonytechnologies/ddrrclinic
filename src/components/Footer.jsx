@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="lg:col-span-2">
             <div className="bg-white inline-block p-2 rounded-xl mb-6">
-              <img src="/src/assets/ddrr-logo.jpeg" alt="DDRR Clinic Logo" className="h-12 object-contain rounded-md" />
+              <img src="/assets/ddrr-logo.jpeg" alt="DDRR Clinic Logo" className="h-12 object-contain rounded-md" />
             </div>
             <h3 className="text-white font-bold text-xl tracking-wide mb-2">{clinicData.name}</h3>
             <p className="text-brand-bright-teal font-medium tracking-widest text-xs mb-4">
@@ -66,10 +66,18 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs">
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-gray-500 text-xs text-center md:text-left">
             © {currentYear} {clinicData.name}. All Rights Reserved.
           </p>
+          
+          <div className="flex items-center gap-2 bg-brand-deep-navy border border-white/5 rounded-full px-4 py-1.5 hover:bg-white/5 transition-colors">
+            <span className="text-gray-500 text-[10px] uppercase tracking-wider">Powered by</span>
+            <a href="https://zeonytechnologies.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+              <img src="/assets/zeony-logo.jpg" alt="Zeony Technologies" className="h-4 md:h-5 object-contain mix-blend-screen" />
+            </a>
+          </div>
+
           <div className="text-gray-500 text-xs flex gap-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

@@ -1,10 +1,10 @@
 export const gallery = [
-  { id: 1, src: "/src/assets/ddrr_gallery.jpg", alt: "Clinic exterior" },
-  { id: 2, src: "/src/assets/ddrr_gallery.jpg", alt: "Modern reception area" },
-  { id: 3, src: "/src/assets/ddrr_gallery.jpg", alt: "Advanced rehabilitation equipment" },
-  { id: 4, src: "/src/assets/ddrr_gallery.jpg", alt: "Patient consultation room" },
-  { id: 5, src: "/src/assets/ddrr_gallery.jpg", alt: "Clinic waiting area" },
-  { id: 6, src: "/src/assets/ddrr_gallery.jpg", alt: "Therapy in progress" },
+  { id: 1, src: "/assets/ddrr_gallery.jpg", alt: "Clinic exterior" },
+  { id: 2, src: "/assets/ddrr_gallery.jpg", alt: "Modern reception area" },
+  { id: 3, src: "/assets/ddrr_gallery.jpg", alt: "Advanced rehabilitation equipment" },
+  { id: 4, src: "/assets/ddrr_gallery.jpg", alt: "Patient consultation room" },
+  { id: 5, src: "/assets/ddrr_gallery.jpg", alt: "Clinic waiting area" },
+  { id: 6, src: "/assets/ddrr_gallery.jpg", alt: "Therapy in progress" },
 ];
 
 export const testimonials = [

@@ -43,7 +43,7 @@ const OnlineConsultation = () => {
             {/* Image */}
             <div className="relative aspect-video md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 md:order-2">
               <img 
-                src="/src/assets/ddrr_consult.jpg" 
+                src="/assets/ddrr_consult.jpg" 
                 alt="Online Consultation" 
                 className="w-full h-full object-cover"
               />

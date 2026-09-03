@@ -22,7 +22,7 @@ const About = () => {
           className="relative aspect-square md:aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden bg-brand-soft-gray border border-gray-200 shadow-xl"
         >
           <img 
-            src="/src/assets/ddrr_about.jpg" 
+            src="/assets/ddrr_about.jpg" 
             alt="DDRR Clinic facility" 
             className="rounded-3xl shadow-xl w-full h-full object-cover relative z-10"
           />

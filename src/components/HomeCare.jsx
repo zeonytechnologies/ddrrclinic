@@ -49,7 +49,7 @@ const HomeCare = () => {
           {/* Image */}
           <div className="relative aspect-square md:aspect-[4/3] overflow-hidden">
             <img 
-              src="/src/assets/ddrr_homecare.jpg" 
+              src="/assets/ddrr_homecare.jpg" 
               alt="Home Care Physiotherapy" 
               className="w-full h-full object-cover"
             />
