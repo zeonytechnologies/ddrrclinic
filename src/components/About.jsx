@@ -39,6 +39,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="min-w-0"
         >
           <span className="text-brand-teal font-bold tracking-wider text-sm mb-4 block">ABOUT DDRR CLINIC</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-brand-deep-navy mb-6 leading-tight">
