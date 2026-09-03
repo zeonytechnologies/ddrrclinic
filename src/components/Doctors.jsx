@@ -20,23 +20,17 @@ const Doctors = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="group"
+              className="bg-brand-soft-gray/50 rounded-[2rem] p-8 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-brand-teal/20 hover:-translate-y-2 group text-center"
             >
-              <div className="relative mb-6 overflow-hidden rounded-[2rem] bg-brand-light-bg aspect-[3/4] border border-gray-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:shadow-brand-teal/20">
-                {/* Image */}
-                <div className="relative aspect-square md:aspect-[4/5] bg-gray-100 overflow-hidden">
-                  <img src={doctor.image} alt={doctor.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  
-                  {/* Social/Contact Overlay on Hover */}
-                </div>
-                <div className="absolute inset-0 bg-brand-teal/0 group-hover:bg-brand-teal/10 transition-colors duration-300" />
+              <div className="w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center shadow-md mb-6 border border-brand-teal/20 group-hover:bg-brand-teal transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand-teal group-hover:text-white transition-colors duration-300"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </div>
 
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-brand-deep-navy mb-1 group-hover:text-brand-teal transition-colors">{doctor.name}</h3>
-                <p className="text-brand-teal font-semibold text-sm mb-2">{doctor.qualification}</p>
-                <p className="text-gray-500 text-sm">{doctor.role}</p>
+              <h3 className="text-2xl font-bold text-brand-deep-navy mb-2 group-hover:text-brand-teal transition-colors">{doctor.name}</h3>
+              <div className="inline-block px-3 py-1 bg-brand-teal/10 text-brand-teal rounded-full font-semibold text-sm mb-3">
+                {doctor.qualification}
               </div>
+              <p className="text-gray-500 font-medium">{doctor.role}</p>
             </motion.div>
           ))}
         </div>
