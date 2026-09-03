@@ -4,20 +4,20 @@ export const doctors = [
     name: "Dr. M.S. Devaraj",
     qualification: "BPT",
     role: "Physiotherapist",
-    image: "/doctorPlaceholder.jpg"
+    image: "/src/assets/ddrr_doctor.jpg"
   },
   {
     id: 2,
-    name: "Dr. M.S. Rubini",
+    name: "Dr. K. Bharathi",
     qualification: "BPT",
     role: "Physiotherapist",
-    image: "/doctorPlaceholder.jpg"
+    image: "/src/assets/ddrr_doctor.jpg"
   },
   {
     id: 3,
-    name: "Dr. G. Mounika",
-    qualification: "BPT, MPT Neuro",
-    role: "Physiotherapist (Neuro)",
-    image: "/doctorPlaceholder.jpg"
+    name: "Dr. T. Thiyagu",
+    qualification: "BPT",
+    role: "Physiotherapist",
+    image: "/src/assets/ddrr_doctor.jpg"
   }
 ];

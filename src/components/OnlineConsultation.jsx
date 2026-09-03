@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Video, CalendarCheck2 } from 'lucide-react';
+import { Video, CalendarCheck2, PhoneOff } from 'lucide-react';
 import { clinicData } from '../data/clinicData';
 
 const OnlineConsultation = () => {

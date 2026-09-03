@@ -23,12 +23,12 @@ const Doctors = () => {
               className="group"
             >
               <div className="relative mb-6 overflow-hidden rounded-[2rem] bg-brand-light-bg aspect-[3/4] border border-gray-100 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:shadow-brand-teal/20">
-                <div className="absolute inset-0 flex items-center justify-center text-brand-teal text-sm font-medium">
-                  Doctor Image Placeholder
+                {/* Image */}
+                <div className="relative aspect-square md:aspect-[4/5] bg-gray-100 overflow-hidden">
+                  <img src={doctor.image} alt={doctor.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  
+                  {/* Social/Contact Overlay on Hover */}
                 </div>
-                {/* <img src={doctor.image} alt={doctor.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" /> */}
-                
-                {/* Teal overlay on hover */}
                 <div className="absolute inset-0 bg-brand-teal/0 group-hover:bg-brand-teal/10 transition-colors duration-300" />
               </div>
 

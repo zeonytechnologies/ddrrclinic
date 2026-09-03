@@ -28,10 +28,7 @@ const Equipment = () => {
               >
                 {/* Image Area */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                  <div className="absolute inset-0 flex items-center justify-center text-brand-teal text-sm font-medium">
-                    Equipment Image Placeholder
-                  </div>
-                  {/* <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" /> */}
+                  <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   
                   {/* Overlay on hover */}
                   <div className="absolute inset-0 bg-brand-deep-navy/0 group-hover:bg-brand-deep-navy/10 transition-colors duration-300" />

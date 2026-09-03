@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
-import { galleryImages } from '../data/gallery';
+import { gallery as galleryImages } from '../data/gallery';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -55,11 +55,7 @@ const Gallery = () => {
               onClick={() => openLightbox(index)}
             >
               {/* Aspect ratio varied for masonry effect */}
-              <div className={`w-full ${index % 3 === 0 ? 'aspect-[4/5]' : index % 2 === 0 ? 'aspect-square' : 'aspect-[4/3]'} flex items-center justify-center text-brand-teal text-sm font-medium`}>
-                Gallery Image {image.id} Placeholder
-              </div>
-              
-              {/* <img src={image.src} alt={image.alt} className="w-full object-cover transition-transform duration-700 group-hover:scale-110" /> */}
+              <img src={image.src} alt={image.alt} className={`w-full object-cover transition-transform duration-700 group-hover:scale-110 ${index % 3 === 0 ? 'aspect-[4/5]' : index % 2 === 0 ? 'aspect-square' : 'aspect-[4/3]'}`} />
               
               <div className="absolute inset-0 bg-brand-deep-navy/0 group-hover:bg-brand-deep-navy/40 transition-colors duration-300 flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform group-hover:scale-110 bg-white/20 p-3 rounded-full backdrop-blur-sm text-white">
@@ -112,10 +108,7 @@ const Gallery = () => {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Image inside lightbox */}
-              <div className="w-full aspect-video flex items-center justify-center text-brand-teal font-medium">
-                {selectedImage.alt} Placeholder (Large)
-              </div>
-              {/* <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-full object-contain" /> */}
+              <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-full object-contain" />
               
               <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white text-center">
                 {selectedImage.alt}
