@@ -26,17 +26,22 @@ const Equipment = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-brand-teal/10 transition-all duration-300 group hover:-translate-y-2"
               >
-                {/* Image Area */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                  <img src={item.image} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                {/* Gradient Image Area */}
+                <div className={`relative aspect-[4/3] overflow-hidden bg-gradient-to-br ${item.color} flex items-center justify-center p-8`}>
+                  
+                  {/* Background pattern/glow */}
+                  <div className="absolute inset-0 bg-black/10"></div>
+                  
+                  {/* Large Icon */}
+                  <Icon size={80} strokeWidth={1.5} className="text-white/90 drop-shadow-xl group-hover:scale-110 transition-transform duration-500 relative z-10" />
                   
                   {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-brand-deep-navy/0 group-hover:bg-brand-deep-navy/10 transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-brand-deep-navy/0 group-hover:bg-brand-deep-navy/20 transition-colors duration-300 z-20" />
                 </div>
 
                 {/* Content */}
-                <div className="p-6 relative">
-                  {/* Icon floating */}
+                <div className="p-6 relative bg-white">
+                  {/* Small Icon floating */}
                   <div className="absolute -top-6 right-6 w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white group-hover:scale-110 group-hover:bg-brand-bright-teal transition-all duration-300">
                     <Icon size={20} />
                   </div>

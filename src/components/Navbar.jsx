@@ -26,7 +26,7 @@ const Navbar = ({ onBookAppointment }) => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'top-0 lg:top-2' : 'top-0 lg:top-4'}`}>
-      <div className={`mx-auto transition-all duration-300 ${isScrolled ? 'w-full lg:w-[95%] lg:max-w-7xl lg:rounded-full bg-white/95 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b lg:border border-gray-100 py-3 px-4 md:px-6 lg:px-8' : 'w-full px-4 md:px-6 lg:px-8 py-4 bg-transparent'}`}>
+      <div className={`relative mx-auto transition-all duration-300 ${isScrolled ? 'w-full lg:w-[95%] lg:max-w-7xl lg:rounded-full bg-white/95 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-b lg:border border-gray-100 py-3 px-4 md:px-6 lg:px-8' : 'w-full px-4 md:px-6 lg:px-8 py-4 bg-transparent'}`}>
         <div className="flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2 md:gap-3 shrink-0">
             <img src="/assets/ddrr-logo.jpeg" alt="DDRR Clinic Logo" className="h-12 md:h-16 object-contain rounded-md" />
@@ -65,10 +65,11 @@ const Navbar = ({ onBookAppointment }) => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div 
-              initial={{ opacity: 0, height: 0, y: -10 }}
-              animate={{ opacity: 1, height: 'auto', y: 0 }}
-              exit={{ opacity: 0, height: 0, y: -10 }}
-              className="lg:hidden absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="lg:hidden absolute top-full left-0 w-full mt-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50"
             >
               <div className="p-4 flex flex-col gap-2">
                 {navLinks.map((link) => (

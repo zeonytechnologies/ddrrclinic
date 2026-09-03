@@ -49,11 +49,11 @@ const About = () => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 mb-12 py-8 border-y border-brand-soft-gray">
+          <div className="flex flex-row justify-between gap-2 md:gap-6 mb-12 py-8 border-y border-brand-soft-gray">
             {stats.map((stat, i) => (
-              <div key={i} className="text-center">
-                <div className="text-3xl md:text-4xl font-black text-brand-teal mb-2">{stat.value}</div>
-                <div className="text-xs md:text-sm font-semibold text-brand-dark-navy uppercase tracking-wide">{stat.label}</div>
+              <div key={i} className="text-center flex-1">
+                <div className="text-2xl md:text-4xl font-black text-brand-teal mb-1 md:mb-2">{stat.value}</div>
+                <div className="text-[10px] sm:text-xs md:text-sm font-semibold text-brand-dark-navy uppercase tracking-wide leading-tight break-words">{stat.label}</div>
               </div>
             ))}
           </div>

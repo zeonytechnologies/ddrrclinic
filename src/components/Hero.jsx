@@ -87,9 +87,8 @@ const Hero = ({ onBookAppointment }) => {
           className="relative lg:h-[600px] flex items-center justify-center"
         >
           <div className="relative w-full max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white z-10">
-            {/* Image Placeholder */}
+            {/* Image Container */}
             <div className="absolute inset-0 bg-brand-soft-gray flex items-center justify-center">
-              <span className="text-brand-teal font-medium">Hero Image Placeholder</span>
               <img 
                 src="/assets/ddrr_hero.jpg" 
                 alt="Physiotherapy session at DDRR Clinic" 
@@ -107,10 +106,10 @@ const Hero = ({ onBookAppointment }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20 border border-brand-soft-gray"
+            className="absolute -bottom-4 left-4 md:-bottom-6 md:-left-6 bg-white p-4 md:p-6 rounded-2xl shadow-xl z-20 border border-brand-soft-gray"
           >
-            <div className="text-brand-teal text-4xl font-extrabold mb-1">6+</div>
-            <div className="text-sm font-semibold text-brand-dark-navy leading-tight">Years in<br />Healthcare</div>
+            <div className="text-brand-teal text-3xl md:text-4xl font-extrabold mb-1">6+</div>
+            <div className="text-xs md:text-sm font-semibold text-brand-dark-navy leading-tight">Years in<br />Healthcare</div>
           </motion.div>
         </motion.div>
       </div>
